@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+body input{
+    display: none;
+}
+
+body label{
+    background-color: #ccc;
+    border: 4px solid deeppink;
+    border-radius: 50px;
+    width: 150px;
+    height: 65px;
+    position: relative;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    box-shadow: inset 1px 1px 20px 1px rgba(0, 0, 0, 0.797);
+}
+
+label div{
+    background-color: deeppink;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: all 500ms ease-in-out;
+    box-shadow: inset 1px 1px 20px 1px rgba(0, 0, 0, 0.797);
+}
+
+label h1{
+    position: absolute;
+    left: 70px;
+    top: 10px;
+    transition: all 500ms ease-in-out;
+    color: deeppink;
+}
+
+body input:checked ~ label{
+    border: 4px solid #ccc;
+    background-color: deeppink;
+}
+
+body input:checked ~ label div{
+    background-color: #ccc;
+    left: 88px;
+}
+
+body input:checked ~ label h1{
+    left: 5px;
+    color: #ccc;
+}
+
