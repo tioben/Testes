@@ -1,0 +1,71 @@
+/* Section1 - Inicio*/
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; 
+    padding-top: 110px; 
+}
+
+
+.intro-image {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+.intro-image img {
+    width: 450px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.intro-message {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    line-height: 3rem;
+    color: #fff;
+
+}
+
+.intro-section .intro-message h1{
+    font-size: 2rem;
+} 
+
+.intro-section .intro-message h2{
+    font-size: 1rem;
+    color: #00f4ff;
+} 
+
+.intro-section .intro-message p{
+    font-size: 1rem;
+} 
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; 
+    padding: 20px;
+    border-radius: 50px; 
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #222; 
+    font-size: 24px; 
+    border-radius: 50%; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0); 
+    border-radius: 50%; 
+    width: 48px; 
+    height: 48px; 
+    line-height: 48px; 
+}
+
+.social-icons a:hover {
+    background-color: #00f4ff; 
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+}
