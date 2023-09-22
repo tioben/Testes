@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +10,32 @@
     <div class="buttons">
         <button class="button" id="add-button">Adicionar jogador</button>
         <button class="button" id="del-button">Remover jogador</button>
+        <button class="button" id="close-button" style="display:none;">X</button>
     </div>
-    <section id="add-player">
-        <form action="">
+    <section id="add-player" class="config-section">
+        <form action="" id="add-player-form">
             <br>
-            <label for="Nickname">Nickname</label>
-            <input type="text" id="add-nickname" name="nickname">
+            <label for="add-nickname">Nickname</label>
+            <input type="text" id="add-nickname" name="nickname" maxlength="20" pattern="[A-Za-z0-9 ]+" required>
             <br>
-            <label for="Vocation">Vocation</label>
-            <input type="text" id="add-vocation" name="vocation">
+            <label for="add-vocation">Vocation</label>
+            <input type="text" id="add-vocation" name="vocation" required>
             <br>
-            <label for="Level">Level</label>
-            <input type="number" id="add-level" name="level">
+            <label for="add-level">Level</label>
+            <input type="number" id="add-level" name="level" min="8" required>
             <br>
-            <label for="World">World</label>
-            <input type="text" id="add-world" name="world">
+            <label for="add-world">World</label>
+            <input type="text" id="add-world" name="world" required>
             <br>
             <input class="button" type="submit" value="Adicionar">
             <br>
         </form>
     </section>
-    <section id="del-player">
-        <form action="">
+    <section id="del-player" class="config-section">
+        <form action="" id="del-player-form">
             <br>
-            <label for="Nickname">Nickname</label>
-            <input type="text" id="del-nickname" name="nickname">
+            <label for="del-nickname">Nickname</label>
+            <input type="text" id="del-nickname" name="nickname" maxlength="20" pattern="[A-Za-z0-9 ]+" required>
             <br>
             <input class="button" type="submit" value="Remover">
             <br>
