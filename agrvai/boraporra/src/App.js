@@ -69,11 +69,35 @@ function App() {
       <section id="skills-section" className="skills-section">
         <h1>Minhas <span className="span-neon">Habilidades</span></h1>
         <div className="skills-container">
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
+          
+          <Skill 
+            iconColor = '#bbff00'
+            percentColor = '#bbff00'
+            percentNumber = '80'
+            title = 'JavaScript'
+          />
+
+          <Skill 
+            iconColor = '#bbff00'
+            percentColor = '#bbff00'
+            percentNumber = '80'
+            title = 'JavaScript'
+          />
+
+          <Skill 
+            iconColor = '#bbff00'
+            percentColor = '#bbff00'
+            percentNumber = '80'
+            title = 'JavaScript'
+          />
+
+          <Skill 
+            iconColor = '#bbff00'
+            percentColor = '#bbff00'
+            percentNumber = '80'
+            title = 'JavaScript'
+          />
+          
         </div>
       </section>
 
@@ -81,17 +105,31 @@ function App() {
       <section id="project-section" className="projects-section"> {/* Corrija "class" para "className" */}
         <h1>Meus <span className="span-neon">Projetos</span></h1>
         <div className="projects-container">
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
+
+          <Project 
+            img = "img/pokedex.png"
+            alt = "Projeto Pokedex"
+            title = "Pokedex"
+            tec1 = "HTML 5"
+            tec2 = "CSS 3"
+            tec3 = "JavaScript" 
+            tec4 = ""
+            tec5 = ""
+            description = "Consumo de API pokemon."
+            aboutMore = "https://tiobenpokedex.netlify.app/"
+          />
+
         </div>
       </section>
 
       {/* Footer. */}
-      <Footer />
+      <Footer 
+        git = "https://github.com/tioben"
+        linkedin = "https://www.linkedin.com/in/gustavo-martins-211669159/"
+        instagram = "https://www.instagram.com/tioben_gh/"
+        tel = "+5511931507860"
+        email = "tioben@outlook.com.br"
+      />
     </div>
   );
 }

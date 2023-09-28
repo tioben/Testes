@@ -7,20 +7,22 @@ export default function Project(props) {
 
   return (
     <div className="project">
-      <img src="img/pokedex.png" alt="Projeto Pokedex" aria-label="Projeto Pokedex" />
-      <h2>Pokedex</h2>
-      <p>Consumo de API pokemon.</p>
+      <img src={props.img} alt={props.alt} aria-label={props.alt} />
+      <h2>{props.title}</h2>
+      <p>{props.description}</p>
       <ul style={{ listStyleType: 'none' }}>
         <li>
           <h4 style={projectStyle}>Tecnologias</h4>
         </li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+        <li>{props.tec1}</li>
+        <li>{props.tec2}</li>
+        <li>{props.tec3}</li>
+        <li>{props.tec4}</li>
+        <li>{props.tec5}</li>
       </ul>
       <div className="btn-box-project">
         <a
-          href="https://tiobenpokedex.netlify.app/"
+          href= {props.aboutMore}
           className="btn-project"
           target="_blank"
           rel="noopener noreferrer"

@@ -2,18 +2,18 @@ import React from 'react';
 
 export default function Skill(props) {
   const skillStyle = {
-    color: '#bbff00',
+    color: props.iconColor,
   };
 
   const percentStyle = {
-    '--clr': '#bbff00',
-    '--num': 80,
+    '--clr': props.percentColor,
+    '--num': props.percentNumber,
   };
 
   return (
     <div className="skill">
       <i className="fab fa-js" style={skillStyle}></i>
-      <h2>JavaScript</h2>
+      <h2>{props.title}</h2>
       <div className="container">
         <div className="card">
           <div className="percent" style={percentStyle}>
@@ -23,8 +23,8 @@ export default function Skill(props) {
               <circle cx="70" cy="70" r="70"></circle>
             </svg>
             <div className="number">
-              <h2>80<span>%</span></h2>
-              <p>JavaScript</p>
+              <h2>{props.percentNumber}<span>%</span></h2>
+              <p>{props.title}</p>
             </div>
           </div>
         </div>
