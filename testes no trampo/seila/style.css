@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: white;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-fundo: #3b3a3a;
+    --cor-primaria: #333333; 
+    --cor-secundaria: #555555;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav{
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    height: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+main{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-secundaria);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 50px;
+}
+
+main #new-task{
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 500ms;
+    position: absolute;
+    top: 30px;
+    border: none;
+}
+
+main #new-task:hover{
+    background-color: rgb(204, 204, 204);
+    color: var(--cor-secundaria);
+}
+
+.task-card{
+    background-color: var(--cor-primaria);
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    gap: 30px;
+}
+
+.task-card input{
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+    border: none;
+    width: 95%;
+    height: 22px;
+    font-size: 12px;
+    padding: 0px 10px;
+}
+
+.task-card #check-box{
+    display: none;
+}
+
+.task-card label {
+    width: 21.75px;
+    height: 20px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.task-card #hamburguer{
+    transform: rotate(90deg);
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+
