@@ -96,8 +96,13 @@
     content: "";
     background-color: cyan;
     position: absolute;
-    width: 50%; /*fazer esse boneco aqui variar com o hover no a */
+    width: 0%; /*fazer esse parametro aqui variar com o hover no <a> */
     height: 100%;
+    transition: all 200ms ease-in;
+}
+
+.link-ciano-caixa:hover::after{ /* aqui nao funciona*/
+    width: 100%;
 }
 
 .link-ciano-caixa a{
