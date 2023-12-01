@@ -1,0 +1,172 @@
+/* importações */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap");
+
+/* variáveis */
+:root{
+    --texto-primario: #EEEEEE;
+    --texto-secundario: #A7A6A6;
+    --fundo-primeiro-plano: #474747;
+    --fundo-segundo-plano: #363636;
+}
+
+/* configurações globais */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* classes globais */
+.titulo-h1{
+    font-size: 36px;
+    color: cyan;
+    position: relative;
+}
+
+.titulo-h1::before{
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 2px;
+    right: -5%;
+    background-color: cyan;
+    display: block;
+
+}
+
+.titulo-h1::after{
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 2px;
+    right: -5%;
+    background-color: cyan;
+    display: block;
+}
+
+.titulo-h2{
+    margin-top: 5px;
+    font-size: 16px;
+    color: cyan;
+}
+
+.texto-primario{
+    color: var(--texto-primario);
+    font-size: medium;
+}
+
+/* LINK CIANO (IGUAL DA NAV BAR) */
+.link-ciano{
+    font-size: 18px;
+    transition: all 200ms ease-in;
+    color: white;
+    font-size: large;
+}
+
+.link-ciano:hover{
+    color: cyan;
+}
+
+.link-ciano::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 3px auto 0 auto;
+    transition: all 200ms ease-in;
+}
+
+.link-ciano:hover::after{
+    width: 100%;
+    background-color: cyan;
+    box-shadow: 0px 0px 10px 2px cyan;
+}
+
+/* LINK CIANO COM CIAXA (IGUAL O SAIBA MAIS) */
+.link-ciano-caixa{
+    display: flex;
+    position: relative;
+}
+
+.link-ciano-caixa::after{
+    content: "";
+    background-color: cyan;
+    position: absolute;
+    width: 50%; /*fazer esse boneco aqui variar com o hover no a */
+    height: 100%;
+}
+
+.link-ciano-caixa a{
+    color: white;
+    font-size: 18px;
+    padding: 18px;
+    border: 2px solid white;
+    transition: all 200ms ease-in;
+    position: relative;
+    z-index: 1;
+}
+
+.link-ciano-caixa a:hover{
+    border: 2px solid var(--fundo-primeiro-plano);
+    color: var(--fundo-primeiro-plano);
+}
+
+/* cabeça */
+header{
+    width: 100vw;
+    background-color: var(--fundo-primeiro-plano);
+}
+
+header nav{
+    width: 100%;
+    padding: 15px 30px;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+header nav ul #perfil::before{
+    content:"|||";
+    display: inline-block;
+    letter-spacing: 2px;
+    transform: rotate(90deg);
+    margin: 0 0.25em;
+}
+
+/* corpo */
+section{
+    background-color: var(--fundo-segundo-plano);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 56.6px);
+}
+
+section #foto-inicio{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("img/funcionarios-industriais-com-capacete-amarelo-operando-maquinas-na-linha-de-producao-usando-um-novo-software-de-computador.jpg");
+    margin: 30px;
+}
+
+section #texto-inicio{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
