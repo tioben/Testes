@@ -87,52 +87,59 @@
 }
 
 /* LINK CIANO COM CIAXA (IGUAL O SAIBA MAIS) */
-.link-ciano-caixa{
+.contain{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-segundo-plano);
+    border: solid 2px white;
+    margin-top: 10px;
     position: relative;
-}
-
-.link-ciano-caixa::after{
-    content: "";
-    background-color: cyan;
-    position: absolute;
-    width: 0%; 
-    height: 100%;
+    cursor: pointer;
     transition: all 200ms ease-in;
 }
 
-.link-ciano-caixa:hover::after{
-    width: 100%;
+.contain:hover{
+    border: solid 2px var(--fundo-primeiro-plano);
 }
 
-.link-ciano-caixa a{
+.contain::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+}
+
+.contain a{
     color: white;
     font-size: 18px;
     padding: 18px;
-    border: 2px solid white;
-    transition: all 200ms ease-in;
-    position: relative;
-    z-index: 1;
-    
 }
 
-.link-ciano-caixa a:hover{
-    border: 2px solid var(--fundo-primeiro-plano);
-    color: var(--fundo-primeiro-plano);
+.contain a:hover{
+    color: var(--fundo-segundo-plano);
 }
 
-.link-ciano-caixa a::after{
-    content: "";
-    display: block;
+.contain #um{
+    background-color: var(--fundo-primeiro-plano);
     width: 0%;
     height: 2px;
-    background-color: var(--fundo-primeiro-plano);
-    margin: 3px auto 0 auto;
-    transition: all 200ms ease-in;
+    display: block;
+    position: absolute;
+    top: 75%;
+    transition: all 400ms ease-in;
 }
 
-.link-ciano-caixa a:hover::after{
-    width: 100%;
+.contain #dois{
+    background-color: white;
+    width: calc(100% - 36px);
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 75%;
+    transition: all 300ms ease-in;
 }
 
 /* cabeça */
