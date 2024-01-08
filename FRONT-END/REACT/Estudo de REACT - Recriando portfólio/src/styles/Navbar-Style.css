@@ -1,0 +1,89 @@
+.App {
+  background-color: #222;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+/* Nav bar */
+.navbar {
+  position: fixed; 
+  top: 0; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: 60px;
+  background-color: #333; 
+  z-index: 100; 
+  box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.496);
+}
+
+.navbar .contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.navbar h1{
+  color: white;
+}
+
+.navbar h1 span{
+  color: #00f4ff;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #00f4ff; 
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #00f4ff; 
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+
+.nav-item:hover::before {
+  transform: scaleX(1);
+}
+
+#menu-toggle {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.menu-icon{
+  color: #333;
+}

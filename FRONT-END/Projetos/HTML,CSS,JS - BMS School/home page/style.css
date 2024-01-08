@@ -1,0 +1,29 @@
+/* corpo */
+.intro{
+    background-color: var(--fundo-segundo-plano);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 56.6px);
+}
+
+.intro #foto-inicio{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/funcionarios-industriais-com-capacete-amarelo-operando-maquinas-na-linha-de-producao-usando-um-novo-software-de-computador.jpg");
+    margin: 30px;
+}
+
+.intro #texto-inicio{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
