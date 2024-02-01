@@ -17,7 +17,6 @@ console.log(obj);
 console.log(typeof obj)
 console.log("--------")
 
-
 //Objeto Javascript em texto padrão JSON
 console.log("--------")
 const objData = JSON.stringify(obj);
