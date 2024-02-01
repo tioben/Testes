@@ -1,0 +1,13 @@
+{
+    "string": "Hello world!",
+    "boolean": true,
+    "array": ["Watch movie", 12, 12.5, true],
+    "number": 12,
+    "Null": null,
+    "object": {
+        "object_string": "value1",
+        "object_number": 12,
+        "object_array": [12, 12.5, "hello world", null]
+    }
+}
+
