@@ -42,11 +42,11 @@ header img{
     object-fit: contain;
 }
 
-/* Imagem na intro + card */
-header .intro{
+/* Sessão com imagem no meio e box*/
+.intro{
     width: 100vw;
     height: calc(100vh - 136px);
-    background: url("img/fundo.png") no-repeat center fixed;
+    background: no-repeat center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ header .intro{
     justify-content: center;
 }
 
-header .intro .box{
+.intro .box{
     background-color: white;
     width: 800px;
     padding-bottom: 30px;
@@ -65,21 +65,21 @@ header .intro .box{
     position: relative;
 }
 
-header .button-box{
+.button-box{
     position: absolute;
     right: 0;
     bottom: -48px;
     display: flex;
 }
 
-header .button-box a{
+.button-box a{
     background-color: #d41317;
     color: white;
     font-family: 'Helvetica Light', 'Arial', sans-serif; /* PROBLEMAS COM A FONTE */
     padding: 15px 50px;
 }
 
-header .button-box a:hover{
+.button-box a:hover{
     background-color: #1a2b6d;
 }
 
@@ -94,23 +94,23 @@ header .button-box a:hover{
     background-color: #d41317;
 }
 
-header .box img{
+.box img{
     width: 500px;
     height: 200px;
 }
 
 
-header .box2{
+.box2{
     display: flex;
 }
 
-header .box2 p{
+.box2 p{
     margin: 0px 30px;
     line-height: 30px;
     font-family: 'Helvetica Light', 'Arial', sans-serif; /* PROBLEMAS COM A FONTE */
 }
 
-header .box2 .line{
+.box2 .line{
     width: 500px;
     margin-left: 30px;
     height: 3px;
