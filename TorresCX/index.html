@@ -78,7 +78,31 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <h1>Fale conosco</h1>
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+                <input type="text" id="nome" name="usuario_nome" placeholder="Nome" />
+                <input type="email" id="email" name="usuario_email" placeholder="E-mail" />
+            </div>
+            <textarea id="msg" name="usuario_msg" placeholder="Mensagem" readonly></textarea>          
+            <button type="submit">Enviar</button>
+          </form>
+          <div class="infos">
+            <div class="box">
+                <p>Rua Doutor Diogo de Faria 775, Sala 123/124</p>
+                <p>Vila Clementino, São Paulo - SP</p>
+                <p>CEP 04037-002</p>
+            </div>
+            <div class="box">
+                <p>Fone(SP): +55 11 3042-8559</p>
+                <p>Fone(PE): +55 81 4042-0200</p>
+            </div>
+            <div class="box">
+                <p>Email. contato@torrescx.com.br</p>
+            </div>
+          </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

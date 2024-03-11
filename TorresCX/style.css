@@ -197,3 +197,59 @@ header .box2 .line{
     border: solid 3px #f2f2f2;
 }
 
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #1a2b6d;
+    color: white;
+    gap: 60px;
+}
+
+footer form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer form div{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+footer input, textarea{
+    background-color: #1a2b6d;
+    color: white;
+    border: none;
+    border-bottom: solid 1px white;
+    width: 50%;
+    height: 32px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+footer textarea{
+    width: 100%;
+}
+
+footer button{
+    padding: 15px;
+    color: white;
+    background-color: #1a2b6d;
+    border: none;
+    font-size: 18px;
+}
+
+footer .infos{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
