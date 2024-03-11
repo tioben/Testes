@@ -176,6 +176,11 @@ header .box2 .line{
 .nossos-servicos .card a{
     color: #d41317;
     z-index: 1;
+    transition: all 300ms;
+}
+
+.nossos-servicos .card a:hover{
+    color: #1a2b6d;
 }
 
 .nossos-servicos .card p{
